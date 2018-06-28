@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <UserSecretsId>b388a9f4-7e00-4b04-9386-f881b058088d</UserSecretsId>
+    <RuntimeIdentifier>win10-x64</RuntimeIdentifier>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Views\Auth\**" />
+    <Compile Remove="Views\Proveedores\**" />
+    <Compile Remove="Views\Shared\**" />
+    <Content Remove="Views\Auth\**" />
+    <Content Remove="Views\Proveedores\**" />
+    <Content Remove="Views\Shared\**" />
+    <EmbeddedResource Remove="Views\Auth\**" />
+    <EmbeddedResource Remove="Views\Proveedores\**" />
+    <EmbeddedResource Remove="Views\Shared\**" />
+    <None Remove="Views\Auth\**" />
+    <None Remove="Views\Proveedores\**" />
+    <None Remove="Views\Shared\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\ValuesController.cs" />
+    <Compile Remove="Models\ConectarBD.cs" />
+    <Compile Remove="Models\ModelFactory.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\" />
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting.WindowsServices" Version="2.1.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="2.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.3" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,30 @@
+﻿@model Oxxo2.Models.Proveedores
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Proveedores</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Proveed_nombre)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Proveed_nombre)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Proveed_LogoUrl)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Proveed_LogoUrl)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ProveedorId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

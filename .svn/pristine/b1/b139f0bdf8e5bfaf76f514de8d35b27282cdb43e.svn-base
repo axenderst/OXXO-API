@@ -1,0 +1,19 @@
+{
+
+  "recordsTotal": 2,
+  "recordsFiltered": 2,
+  "data": [
+    [
+        "1",
+        "Alejandro",
+        "2018-05-24T12:51:11.153",
+        "Nuevo Inventario"
+    ],
+    [
+        "2",
+        "Enrique",
+        "2018-05-24T12:52:25.113",
+        "Modifica Inventario"
+    ]
+  ]
+}
